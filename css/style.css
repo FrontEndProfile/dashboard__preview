@@ -10,11 +10,11 @@ header {
 }
 
 .sider__bar {
-    background: bisque;
+    background: #e9e6e6;
     color: #000;
     padding: 40px 30px;
-    min-height: 90vh;
-    max-width: 100vh;
+    min-height: 100vh;
+    max-width: auto;
 }
 .sider__bar_drop {
     margin-bottom: 20px;
@@ -44,12 +44,12 @@ header {
 
 
 .sider__bar_drop {
-    width: 190px;
+    width: 100%;
 }
 
 .custom-select {
     position: relative;
-    width: 190px;
+    width: 100%;
   }
   
   .custom-select select {
@@ -117,11 +117,12 @@ header {
     margin-bottom: 10px;
  } 
  .sider__bar_textarea {
-    margin-bottom: 30px;
+    margin-bottom: 3px;
  }
 .sider__bar_textarea textarea {
     outline: none;
     padding: 8px 10px;
+    width: 100%;
 } 
 .font-type .hide {
     opacity: 0;
@@ -138,7 +139,12 @@ header {
     background: #000;
     border-radius: 50%;
     margin-right: 12px;
+    border: 2px solid transparent;
 } 
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+	
+	border-color: rgb(255, 0, 0);
+}
 
 
 
@@ -160,8 +166,9 @@ header {
     display: flex;
     align-items: center;
     border-radius: 30px;
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 .content__bar_calender_layout_img {
@@ -202,7 +209,7 @@ header {
 	position: relative;
 	border: 3px solid #007aff;
     border-radius: 19px;
-    padding: 30px 0 0;
+    padding: 30px 0;
 }
 .mbsc-calendar-cell.mbsc-flex-1-0-0.mbsc-calendar-day.mbsc-ios.mbsc-ltr >:first-child {
     display: none;
@@ -269,7 +276,6 @@ input {
 }
 .form__tittle .form-control{
     border: 2px solid white;
-    border-radius: 18px;
     color: white;
     font-weight: 600;
     font-size: 20px;
@@ -280,20 +286,139 @@ input {
     color: white;
 }                          
 .content__bar .content__bar_preview_text {
-    color: white;
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 14px;
     font-weight: 600;
-    margin: 15px 0;
+    margin: 0px 0 15px;
 }
 .content__bar_preview {
     padding-left: 40px;
 }
 .content__bar_preview_btn {
-    border: 2px solid white;
+    border: 2px solid white !important;
     padding: 4px 8px;
     color: white;
     font-size: 18px;
     font-weight: bold;
     border-radius: 12px;
     text-decoration: none;
+    
+}
+.content__bar_preview_btn.save {
+    border: 2px solid white !important;
+    padding: 4px 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mbsc-calendar-cell.mbsc-flex-1-0-0.mbsc-calendar-day.mbsc-ios.mbsc-ltr {
+	margin-bottom: 2px;
+	height: fit-content;
+	margin-top: 0px;
+}
+.content__bar_calender_layout_content .mbsc-flex-1-0 {
+	-moz-box-flex: 1;
+	flex: 0 0 auto;
+}
+#mbsc-control-0  div {
+    height: fit-content;
+}
+@media (max-width:1400px) {
+    .mbsc-page {
+        width: 100%;
+    }
+    .content__bar_calender_layout_content {
+        padding: 20px 10px;
+    }
+}
+@media (max-width:1200px) {
+    .content__bar_calender_layout {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .content__bar_calender_layout_img {
+        width: 100%;
+    }
+    .content__bar_calender_layout_content {
+        width: 100%;
+    }
+}
+@media (max-width:991px) {
+    .content__bar {
+        padding: 30px 30px;
+    }
+}
+@media (max-width:767px) {
+    .sider__bar {
+        min-height: fit-content;
+        padding: 15px 30px;
+    }
+    
+    .offcanvas-body,.offcanvas-header {
+        background: #e9e6e6;
+    }
+}
+@media (max-width:575px) {
+    .content__bar_preview_btn.save {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .content__bar_preview {
+        padding-left: 00px;
+    }
+    .content__bar_preview_btn.save,.content__bar_preview_btn {
+        font-size: 16px;
+    }
+    .form__tittle .form-control {
+        font-size: 16px;
+        padding: 7px 16px;
+    }
+    .content__bar {
+        padding: 25px 18px;
+    }
+    .sider__bar {
+        min-height: fit-content;
+        padding: 15px 18px;
+    }
+    .mbsc-ios.mbsc-calendar-week-day {
+        font-size: 16px;
+    }
+    .mbsc-calendar-day {
+        max-width: 12.286%;
+        text-align: center;
+        vertical-align: top;
+    }
+    .mbsc-flex-1-0-0 {
+        flex: 12% 0 0;
+    }
+    #mbsc-control-0 div {
+        justify-content: center;
+    }
+    #mbsc-control-0 div {
+        height: fit-content;
+        font-size: 12px;
+    }
+    .mbsc-page {
+        padding: 3px;
+    }
+    .mbsc-calendar-scroll-wrapper {
+        border: 2px solid #007aff;
+        border-radius: 14px;
+        padding: 20px 0 10px;
+    }
 }

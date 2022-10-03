@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
     <script src="js/mobiscroll.javascript.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
   </head>
   <body>
     <!-- ! HEADER FIXED  -->
-    <header>
+    <header class="d-none">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand text-white" href="#">DESIGN</a>
@@ -37,68 +38,145 @@
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-2 sider__bar">
-            <div class="sider__bar_drop">
-              <div class="dropdown">
-                <a class="btn dropdown-toggle border border-2 border-dark w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span><img class="dropdown-toggle-icon me-1" src="images/world-svgrepo-com.svg" alt=""></span>
-                  Language
-                </a>
-              
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+          <div class="col-xxl-2 col-lg-3 col-md-4 sider__bar">
+            <!-- SIDEMENU  -->
+            <button class="btn shadow-none border-0 d-block d-md-none fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">MENU</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close ms-auto shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="sider__bar_drop">
+                  <div class="custom-select border border-2 border-dark rounded-2 mb-3">
+                    <select>
+                      <option value="0">
+                       Language
+                      </option>
+                      <option value="1">🇩🇪&emsp;Germany</option>
+                      <option value="2">🇳🇱&emsp;Netherlands</option>
+                      <option value="3">🇫🇷&emsp;France</option>
+                      <option value="4">🇪🇸&emsp;Spain</option>
+                      <option value="5">🇬🇧&emsp;England</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sider__bar_select">
+    
+                  <p class="sider__bar_select_text">Please select year</p>
+                  <div class="custom-select border border-2 border-dark rounded-2 mb-3">
+                    <select>
+                      <option value="0">2022</option>
+                      <option value="1">2023</option>
+                      <option value="2">2024</option>
+                      <option value="3">2025</option>
+                      <option value="4">2026</option>
+                      <option value="5">2027</option>
+                      <option value="6">2028</option>
+                      <option value="7">2029</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sider__bar_textarea">
+                  <p class="sider__bar_select_text">Enter your wish</p>
+                  <textarea class="shadow-none border border-2 border-dark rounded-2 bg-transparent" name="message" id="" cols="auto" rows="5"></textarea>
+                </div>
+                <div class="sider__bar_select">
+    
+                  <p class="sider__bar_select_text mb-5">MAY 250 Character</p>
+                  <p class="sider__bar_select_text">FONT TYPE</p>
+                  <div class="custom-select font-type border border-2 border-dark rounded-2 mb-3">
+                    <select>
+                      <option value="0">serif</option>
+                      <option value="1">serif</option>
+                      <option value="2">serif</option>
+                      <option value="3">serif</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sider__bar_color_platte">
+                  <p class="sider__bar_select_text">Text Color</p>
+                  <div class="color_platte_layout">
+                    
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn shadow-none color_platte_layout_item bg-info" for="option1"></label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn shadow-none color_platte_layout_item bg-dark" for="option2"></label>
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn shadow-none color_platte_layout_item bg-secondary" for="option3"></label>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn shadow-none color_platte_layout_item bg-success" for="option4"></label>
+  
+                  </div>
+                  
+                </div>
               </div>
             </div>
-            <div class="sider__bar_select">
-
-              <p class="sider__bar_select_text">please select year</p>
-              <div class="custom-select border border-2 border-dark rounded-2 mb-3">
-                <select>
-                  <option value="0">2022</option>
-                  <option value="1">2023</option>
-                  <option value="2">2024</option>
-                  <option value="3">2025</option>
-                  <option value="4">2026</option>
-                  <option value="5">2027</option>
-                  <option value="6">2028</option>
-                  <option value="7">2029</option>
-                </select>
+            
+            <div class="d-none d-md-block">
+              <div class="sider__bar_drop">
+                <div class="custom-select border border-2 border-dark rounded-2 mb-3">
+                  <select>
+                    <option value="0">
+                     Language
+                    </option>
+                    <option value="1">🇩🇪&emsp;Germany</option>
+                    <option value="2">🇳🇱&emsp;Netherlands</option>
+                    <option value="3">🇫🇷&emsp;France</option>
+                    <option value="4">🇪🇸&emsp;Spain</option>
+                    <option value="5">🇬🇧&emsp;England</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="sider__bar_textarea">
-              <p class="sider__bar_select_text">Enter your wish</p>
-              <textarea class="shadow-none border border-2 border-dark rounded-2 bg-transparent" name="message" id="" cols="auto" rows="8"></textarea>
-            </div>
-            <div class="sider__bar_select">
-
-              <p class="sider__bar_select_text mb-5">MAY 250 Character</p>
-              <p class="sider__bar_select_text">FONT TYPE</p>
-              <div class="custom-select font-type border border-2 border-dark rounded-2 mb-3">
-                <select>
-                  <option value="0">serif</option>
-                  <option value="1">serif</option>
-                  <option value="2">serif</option>
-                  <option value="3">serif</option>
-                </select>
+              <div class="sider__bar_select">
+  
+                <p class="sider__bar_select_text">Please select year</p>
+                <div class="custom-select border border-2 border-dark rounded-2 mb-3">
+                  <select>
+                    <option value="0">2022</option>
+                    <option value="1">2023</option>
+                    <option value="2">2024</option>
+                    <option value="3">2025</option>
+                    <option value="4">2026</option>
+                    <option value="5">2027</option>
+                    <option value="6">2028</option>
+                    <option value="7">2029</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="sider__bar_color_platte">
-              <p class="sider__bar_select_text">Text Color</p>
-              <div class="color_platte_layout">
-                <!-- <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
-                <label class="btn shadow-none color_platte_layout_item" for="btn-check-2"></label> -->
-
-
-                <!-- YA STATIC HA -->
-                <div class="color_platte_layout_item bg-danger"></div>
-                <div class="color_platte_layout_item bg-dark"></div>
-                <div class="color_platte_layout_item bg-info"></div>
-                <div class="color_platte_layout_item bg-success"></div>
+              <div class="sider__bar_textarea">
+                <p class="sider__bar_select_text">Enter your wish</p>
+                <textarea class="shadow-none border border-2 border-dark rounded-2 bg-transparent" name="message" id="" cols="auto" rows="5"></textarea>
               </div>
-              
+              <div class="sider__bar_select">
+  
+                <p class="sider__bar_select_text mb-5">MAY 250 Character</p>
+                <p class="sider__bar_select_text">FONT TYPE</p>
+                <div class="custom-select font-type border border-2 border-dark rounded-2 mb-3">
+                  <select>
+                    <option value="0">serif</option>
+                    <option value="1">serif</option>
+                    <option value="2">serif</option>
+                    <option value="3">serif</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sider__bar_color_platte">
+                <p class="sider__bar_select_text">Text Color</p>
+                <div class="color_platte_layout">
+                  
+                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                  <label class="btn shadow-none color_platte_layout_item bg-info" for="option1"></label>
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                  <label class="btn shadow-none color_platte_layout_item bg-dark" for="option2"></label>
+                  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                  <label class="btn shadow-none color_platte_layout_item bg-secondary" for="option3"></label>
+                  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                  <label class="btn shadow-none color_platte_layout_item bg-success" for="option4"></label>
+
+                </div>
+                
+              </div>
             </div>
           </div>
           <div class="col content__bar">
@@ -120,24 +198,24 @@
             <div class="row">
               <div class="col-12">
                 <form class=" w-100 mt-5 form__tittle" >
-                  <input class="form-control shadow-none" type="search" placeholder="CALENDER TITTLE">
+                  <input class="form-control rounded-2 shadow-none" type="search" placeholder="CALENDER TITTLE">
                 </form>
               </div>
             </div>
-            <div class="row align-items-end">
+            <div class="row align-items-end flex-wrap">
               <div class="col">
                 <div class="content__bar_preview">
                   <div class="content__bar_preview_text">
-                    MAY 25 Character
+                    MAX 250 Character
                   </div>
-                  <a href="#" class="content__bar_preview_btn">
+                  <a href="#" class="btn content__bar_preview_btn">
                     PREVIEW
                   </a>
                   
                 </div>
               </div>
-              <div class="col text-end">
-                <a href="#" class="content__bar_preview_btn px-4">
+              <div class="col text-sm-end">
+                <a href="#" class=" btn content__bar_preview_btn save px-4">
                   SAVE & MOVE TO CALENDER
                 </a>
               </div>
