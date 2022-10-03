@@ -116,6 +116,10 @@ header {
     font-weight: 600;
     margin-bottom: 10px;
  } 
+ .sider__bar_select_text_max {
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 13px;
+ } 
  .sider__bar_textarea {
     margin-bottom: 3px;
  }
@@ -139,12 +143,10 @@ header {
     background: #000;
     border-radius: 50%;
     margin-right: 12px;
-    border: 2px solid transparent;
+    border: 2px solid transparent !important;
 } 
-.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
-	
-	border-color: rgb(255, 0, 0);
-}
+
+
 
 
 
@@ -204,7 +206,7 @@ header {
 }
 .mbsc-calendar-scroll-wrapper {
 	display: block;
-	height: 100%;
+	height: 75% !important;
 	overflow: hidden;
 	position: relative;
 	border: 3px solid #007aff;
@@ -244,7 +246,7 @@ header {
 	height: 75%;
 } */
                   
-button {
+.mbsc-calendar-table button {
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 10px 30px;
@@ -259,7 +261,7 @@ button {
     font-weight: 100;
 }
 
-input {
+.mbsc-calendar-table input {
     width: 100%;
     margin: 0 0 5px 0;
     padding: 10px;
@@ -295,22 +297,22 @@ input {
     padding-left: 40px;
 }
 .content__bar_preview_btn {
-    border: 2px solid white !important;
-    padding: 4px 8px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
+    /* border: 2px solid white !important; */
+    /* padding: 4px 8px; */
+    /* color: white; */
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    /* border-radius: 12px; */
     text-decoration: none;
     
 }
 .content__bar_preview_btn.save {
-    border: 2px solid white !important;
-    padding: 4px 8px;
-    color: white;
+    /* border: 2px solid white !important; */
+    /* padding: 4px 8px; */
+    /* color: white; */
     font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
+    /* font-weight: bold; */
+    /* border-radius: 12px; */
     text-decoration: none;
     width: 300px;
 }
@@ -336,7 +338,7 @@ input {
 	flex: 0 0 auto;
 }
 #mbsc-control-0  div {
-    height: fit-content;
+    /* height: fit-content; */
 }
 @media (max-width:1400px) {
     .mbsc-page {
@@ -408,9 +410,10 @@ input {
     }
     #mbsc-control-0 div {
         justify-content: center;
+        /* height: 100%; */
     }
     #mbsc-control-0 div {
-        height: fit-content;
+        /* height: 100%; */
         font-size: 12px;
     }
     .mbsc-page {
@@ -421,4 +424,10 @@ input {
         border-radius: 14px;
         padding: 20px 0 10px;
     }
+}
+
+.sider__bar_color_platte .form-check-input:checked[type="radio"] {
+	background-image: none;
+    border: 2px solid red !important;
+    box-shadow: none;
 }

@@ -92,7 +92,7 @@ mobiscroll.datepicker('#demo', {
     controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-18-3/javascript/calendar#opt-controls
     display: 'inline'             // Specify display mode like: display: 'bottom' or omit setting to use default
 });
-// mobiscroll.datepicker('#demo', {
-//     // calendarScroll: 'horizontal',
-//     // showWeekNumbers: false,
-// });
+
+
+
+
