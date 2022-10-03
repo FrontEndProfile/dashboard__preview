@@ -1,0 +1,299 @@
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px 50px;
+    background: #000;
+}
+
+.sider__bar {
+    background: bisque;
+    color: #000;
+    padding: 40px 30px;
+    min-height: 90vh;
+    max-width: 100vh;
+}
+.sider__bar_drop {
+    margin-bottom: 20px;
+}
+.sider__bar_drop .dropdown .dropdown-toggle::after {
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-bottom: 0;
+    border-left: .4em solid transparent;
+    display: inherit;
+}
+.sider__bar_drop .dropdown .dropdown-toggle .dropdown-toggle-icon {
+    width: 22px;
+}
+.sider__bar_drop .dropdown .dropdown-toggle {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.sider__bar_drop {
+    width: 190px;
+}
+
+.custom-select {
+    position: relative;
+    width: 190px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: transparent;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 25px;
+    font-weight: 600;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgb(0, 0, 0);
+    color: white !important;
+  }
+
+
+
+ .sider__bar_select_text {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ } 
+ .sider__bar_textarea {
+    margin-bottom: 30px;
+ }
+.sider__bar_textarea textarea {
+    outline: none;
+    padding: 8px 10px;
+} 
+.font-type .hide {
+    opacity: 0;
+    display: none;
+    font-size: 10px;
+}
+.color_platte_layout {
+    display: flex;
+    align-items: center;
+}
+.color_platte_layout_item {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 12px;
+} 
+
+
+
+/* =====================  */
+/* =====================  */
+/* =====================  */
+/* =====================  */
+/* =====================  */
+/* =====================  */
+/* =====================  */
+.content__bar {
+    background: #5f5f5f;
+    padding: 30px 66px;
+
+}
+.content__bar_calender_layout {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #000;
+    overflow: hidden;
+
+}
+.content__bar_calender_layout_img {
+    width: 50%;
+    height: 100%;
+    background: #85ccf8;
+    padding: 20px 30px;
+}
+.content__bar_calender_layout_content {
+    background: white;
+    width: 50%;
+    height: 100%;
+    background: white;
+    padding: 20px 30px;
+}
+.content__bar_calender_layout_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__layout_img {
+    width: 60%;
+}
+
+
+/* TIMER JS  */
+.mbsc-ios.mbsc-page {
+	background: #ffffff;
+	color: #000;
+}
+.mbsc-ios.mbsc-datepicker-inline {
+    border: none;
+}
+.mbsc-calendar-scroll-wrapper {
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border: 3px solid #007aff;
+    border-radius: 19px;
+    padding: 30px 0 0;
+}
+.mbsc-calendar-cell.mbsc-flex-1-0-0.mbsc-calendar-day.mbsc-ios.mbsc-ltr >:first-child {
+    display: none;
+    color: red;
+    scale: 0;
+}
+.mbsc-ios.mbsc-calendar-week-day {
+	font-size: 20px;
+    font-weight: bold;
+}
+
+.mbsc-calendar-title-wrapper {
+	width: 100%;
+	order: 1;
+    justify-content: center;
+}
+.mbsc-ios.mbsc-calendar-controls {
+	position: relative;
+}
+.mbsc-calendar-button.mbsc-calendar-button-prev {
+    position: absolute;
+    left: 0;
+}
+.mbsc-calendar-button.mbsc-calendar-button-next {
+    position: absolute;
+    right: 0;
+}
+.mbsc-page  {
+    width: 80%;
+}
+/* .mbsc-calendar-scroll-wrapper {
+	height: 75%;
+} */
+                  
+button {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 10px 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #5185a8;
+    color: #fff;
+    text-decoration: none;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+input {
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.mbsc-page {
+    padding: 1em;
+}
+.form__tittle .form-control{
+    border: 2px solid white;
+    border-radius: 18px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 20px;
+}  
+.form__tittle input::placeholder{
+    color: white;
+}                          
+.content__bar .content__bar_preview_text {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.content__bar_preview {
+    padding-left: 40px;
+}
+.content__bar_preview_btn {
+    border: 2px solid white;
+    padding: 4px 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+}

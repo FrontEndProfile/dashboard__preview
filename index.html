@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <script>
+      // Ignore this in your implementation
+      window.isMbscDemo = true;
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- ! HEADER FIXED  -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">DESIGN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">MY CALENDER</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ! HEADER FIXED END  -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 sider__bar">
+            <div class="sider__bar_drop">
+              <div class="dropdown">
+                <a class="btn dropdown-toggle border border-2 border-dark w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><img class="dropdown-toggle-icon me-1" src="images/world-svgrepo-com.svg" alt=""></span>
+                  Language
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="sider__bar_select">
+
+              <p class="sider__bar_select_text">please select year</p>
+              <div class="custom-select border border-2 border-dark rounded-2 mb-3">
+                <select>
+                  <option value="0">2022</option>
+                  <option value="1">2023</option>
+                  <option value="2">2024</option>
+                  <option value="3">2025</option>
+                  <option value="4">2026</option>
+                  <option value="5">2027</option>
+                  <option value="6">2028</option>
+                  <option value="7">2029</option>
+                </select>
+              </div>
+            </div>
+            <div class="sider__bar_textarea">
+              <p class="sider__bar_select_text">Enter your wish</p>
+              <textarea class="shadow-none border border-2 border-dark rounded-2 bg-transparent" name="message" id="" cols="auto" rows="8"></textarea>
+            </div>
+            <div class="sider__bar_select">
+
+              <p class="sider__bar_select_text mb-5">MAY 250 Character</p>
+              <p class="sider__bar_select_text">FONT TYPE</p>
+              <div class="custom-select font-type border border-2 border-dark rounded-2 mb-3">
+                <select>
+                  <option value="0">serif</option>
+                  <option value="1">serif</option>
+                  <option value="2">serif</option>
+                  <option value="3">serif</option>
+                </select>
+              </div>
+            </div>
+            <div class="sider__bar_color_platte">
+              <p class="sider__bar_select_text">Text Color</p>
+              <div class="color_platte_layout">
+                <!-- <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                <label class="btn shadow-none color_platte_layout_item" for="btn-check-2"></label> -->
+
+
+                <!-- YA STATIC HA -->
+                <div class="color_platte_layout_item bg-danger"></div>
+                <div class="color_platte_layout_item bg-dark"></div>
+                <div class="color_platte_layout_item bg-info"></div>
+                <div class="color_platte_layout_item bg-success"></div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col content__bar">
+            <div class="content__bar_calender_layout">
+              <div class="content__bar_calender_layout_img">
+                <img class="content__layout_img" src="images/add-image.png" alt="">
+              </div>
+              <div class="content__bar_calender_layout_content d-flex flex-column justify-content-center align-items-center">
+                <!-- ! ============== LAYOUT ===================  -->
+                <div mbsc-page class="demo-date-picker">
+                  <div style="height:100%">
+                      <div id="demo"></div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <form class=" w-100 mt-5 form__tittle" >
+                  <input class="form-control shadow-none" type="search" placeholder="CALENDER TITTLE">
+                </form>
+              </div>
+            </div>
+            <div class="row align-items-end">
+              <div class="col">
+                <div class="content__bar_preview">
+                  <div class="content__bar_preview_text">
+                    MAY 25 Character
+                  </div>
+                  <a href="#" class="content__bar_preview_btn">
+                    PREVIEW
+                  </a>
+                  
+                </div>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="content__bar_preview_btn px-4">
+                  SAVE & MOVE TO CALENDER
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
