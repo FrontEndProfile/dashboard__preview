@@ -8,28 +8,44 @@
 .js .language-picker__form {
     display: none
 }
-
+.language-picker__button {
+  width: 100%;
+}
 .language-picker__button .icon {
     height: 16px;
     width: 16px;
     margin-left: .25rem;
-    margin-left: var(--space-xxxs)
+    margin-left: auto;
 }
-
+.language-picker__list {
+  padding: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.language-picker__list li {
+  color: #000000;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.language-picker__list li:hover {
+  color: #fff !important;
+  background: black;
+}
 .language-picker__dropdown {
     position: absolute;
     left: 0;
     top: 100%;
-    width: 200px;
+    width: 100%;
     background-color: #fff;
-    background-color: var(--color-bg);
+    background-color: #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 1px 8px rgba(0, 0, 0, .1);
     box-shadow: var(--shadow-sm);
-    padding: .375rem 0;
-    padding: var(--space-xxs) 0;
     border-radius: .25em;
     z-index: 4;
-    z-index: var(--zindex-popover);
+    z-index: 99;
     --space-unit: 1rem;
     --space-xxxxs: 0.125rem;
     --space-xxxs: 0.25rem;
@@ -55,9 +71,7 @@
 .language-picker__button[aria-expanded=true]+.language-picker__dropdown {
     visibility: visible;
     opacity: 1;
-    -webkit-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    transform: translateY(4px);
+    transform: translateY(1px);
     transition: opacity .2s, -webkit-transform .2s ease-out;
     transition: opacity .2s, transform .2s ease-out;
     transition: opacity .2s, transform .2s ease-out, -webkit-transform .2s ease-out
@@ -115,6 +129,17 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center
+    
+}
+/* .language-picker__flag:hover {
+  color: white;  
+} */
+.language-picker__flag em {
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  
 }
 
 .language-picker__flag::before {
@@ -163,4 +188,21 @@
 .language-picker--hide-label .language-picker__button .language-picker__flag::before {
     margin-right: .25rem;
     margin-right: var(--space-xxxs)
+}
+
+
+
+
+
+
+.language-picker__button {
+	width: 100%;
+	border: 1px solid black !important;
+  padding: 8px 16px;
+}
+/* .language-picker__label  {
+  justify-content: space-between;
+} */
+.sr-only {
+  display: none;
 }
