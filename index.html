@@ -11,13 +11,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
     <script src="js/mobiscroll.javascript.min.js"></script>
+    <link rel="stylesheet" href="css/select.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-
+    <link rel="stylesheet" href="css/flag_icon.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   </head>
   <body>
     <!-- ! HEADER FIXED  -->
@@ -128,7 +132,7 @@
             
             <div class="d-none d-md-block">
               <div class="sider_bar_drop">
-                <div class="custom-select border border-1 border-dark rounded-1 mb-3">
+                <div class="custom-select d-none border border-1 border-dark rounded-1 mb-3">
                   <select>
                     <!-- <option value="0">
                      Language
@@ -139,8 +143,26 @@
                     <option value="3">🇫🇷&emsp;France</option>
                     <option value="4">🇪🇸&emsp;Spain</option>
                     <option value="5">🇬🇧&emsp;England</option>
+                    <option value="5" class="flag flag-01">England</option>
                   </select>
                 </div>
+
+
+                <div class="js">
+                  <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                  <form action="" class="language-picker__form">
+                    <label for="language-picker-select">Select your language</label>
+                    <select name="language-picker-select" id="language-picker-select">
+                      <option lang="de" value="deutsch">Deutsch</option>
+                      <option lang="en" value="english" selected>English</option>
+                      <option lang="fr" value="francais">Français</option>
+                      <option lang="it" value="italiano">Italiano</option>
+                    </select>
+                  </form>
+                </div></div>
+                <!-- ==================  -->
+               
+
               </div>
               <div class="sider_bar_select">
   
@@ -354,6 +376,15 @@
       </div>
     </main>
 
+    
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected >Open this select menu</option>
+  <option  data-countryCode="DZ" value="213">&#127462; &#127464; efe</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
      
     <script src="js/bootstrap.bundle.min.js"></script>
     
@@ -389,5 +420,6 @@
   }
       });
     </script>
+
   </body>
 </html>
