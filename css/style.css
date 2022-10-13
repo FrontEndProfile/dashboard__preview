@@ -1,449 +1,326 @@
-*,body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header {
-    padding: 20px 50px;
-    background: #000;
+  padding: 20px 50px;
+  background: #000;
 }
 
 .sider_bar {
-    background: #e9e6e6;
-    color: #000;
-    padding: 40px 30px;
-    min-height: fit-content;
-    max-width: auto;
+  background: #e9e6e6;
+  color: #000;
+  padding: 40px 30px;
+  min-height: fit-content;
+  max-width: auto;
 }
+
 .sider_bar_drop {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 .sider_bar_drop .dropdown .dropdown-toggle::after {
-    border-top: .4em solid;
-    border-right: .4em solid transparent;
-    border-bottom: 0;
-    border-left: .4em solid transparent;
-    display: inherit;
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+  display: inherit;
 }
+
 .sider_bar_drop .dropdown .dropdown-toggle .dropdown-toggle-icon {
-    width: 22px;
+  width: 22px;
 }
+
 .sider_bar_drop .dropdown .dropdown-toggle {
-    font-size: 19px;
-    font-weight: bold;
+  font-size: 19px;
+  font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
 
 .sider_bar_drop {
-    width: 100%;
+  width: 100%;
 }
 
 .custom-select {
-    position: relative;
-    width: 100%;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element:*/
-  }
-  
-  .select-selected {
-    background-color: transparent;
-  }
-  
-  /*style the arrow inside the select element:*/
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
+  position: relative;
+  width: 100%;
+}
 
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /*point the arrow upwards when the select box is open (active):*/
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #000 transparent;
-    top: 7px;
-  }
-  
-  /*style the items (options), including the selected item:*/
-  .select-items div,.select-selected {
-    color: #000000;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-    user-select: none;
-    padding-left: 25px;
-    font-weight: 600;
-  }
-  /*style items (options):*/
-  .select-items {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  /*hide the items when the select box is closed:*/
-  .select-hide {
-    display: none;
-  }
-  .select-items div:hover, .same-as-selected {
-    background-color: rgb(0, 0, 0);
-    color: white !important;
-  }
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
 
+.select-selected {
+  background-color: transparent;
+}
 
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
 
- .sider_bar_select_text {
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
- } 
- .sider_bar_select_text_max {
-    color: rgba(0, 0, 0, 0.689);
-    font-size: 13px;
- } 
- .sider_bar_textarea {
-    margin-bottom: 3px;
- }
+  border-color: #000 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgb(0, 0, 0);
+  color: white !important;
+}
+
+.sider_bar_select_text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sider_bar_select_text_max {
+  color: rgba(0, 0, 0, 0.689);
+  font-size: 13px;
+}
+
+.sider_bar_textarea {
+  margin-bottom: 3px;
+}
+
 .sider_bar_textarea textarea {
-    outline: none;
-    padding: 8px 10px;
-    width: 100%;
-} 
-.font-type .hide {
-    opacity: 0;
-    display: none;
-    font-size: 10px;
+  outline: none;
+  padding: 8px 10px;
+  width: 100%;
 }
-.color_platte_layout {
-    display: flex;
-    align-items: center;
-}
-.color_platte_layout_item {
-    width: 30px;
-    height: 30px;
-    background: #000;
-    border-radius: 50%;
-    margin-right: 12px;
-    border: 2px solid transparent !important;
-} 
 
+.font-type .hide {
+  opacity: 0;
+  display: none;
+  font-size: 10px;
+}
+
+.color_platte_layout {
+  display: flex;
+  align-items: center;
+}
+
+.color_platte_layout_item {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid transparent !important;
+}
 
 /* =====================  */
 .content_bar {
-    background: #5f5f5f;
-    padding: 30px 66px;
-
+  background: #5f5f5f;
+  padding: 30px 66px;
 }
+
 .content_bar_calender_layout {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    background: white;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background: white;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-}
 .content_bar_calender_layout_img {
-    width: 50%;
-    height: 100%;
-    background: transparent;
-    padding: 100px 30px;
-    background-image: url(../images/calender.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  padding: 100px 30px;
+  background-image: url(../images/calender.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
+
 .content_bar_calender_layout_content {
-    /* background: white; */
-    width: 50%;
-    /* height: 100%; */
-    /* background: white; */
-    padding: 0px 30px;
+  width: 50%;
+  padding: 0px 30px;
 }
+
 .content_bar_calender_layout_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    /* .content_layout_img {
-        width: 100%;
-        object-fit: cover;
-    } */
-
-
-/* TIMER JS  */
-.mbsc-ios.mbsc-page {
-	background: #ffffff;
-	color: #000;
-}
-.mbsc-ios.mbsc-datepicker-inline {
-    border: none;
-}
-.mbsc-calendar-scroll-wrapper {
-	display: block;
-	/* height: 75% !important; */
-	overflow: hidden;
-	position: relative;
-	border: 3px solid #007aff;
-    border-radius: 19px;
-    padding: 30px 0;
-}
-.mbsc-calendar-cell.mbsc-flex-1-0-0.mbsc-calendar-day.mbsc-ios.mbsc-ltr >:first-child {
-    display: none;
-    color: red;
-    scale: 0;
-}
-.mbsc-ios.mbsc-calendar-week-day {
-	font-size: 20px;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mbsc-calendar-title-wrapper {
-	width: 100%;
-	order: 1;
-    justify-content: center;
-}
-.mbsc-ios.mbsc-calendar-controls {
-	position: relative;
-}
-.mbsc-calendar-button.mbsc-calendar-button-prev {
-    position: absolute;
-    left: 0;
-}
-.mbsc-calendar-button.mbsc-calendar-button-next {
-    position: absolute;
-    right: 0;
-}
-.mbsc-page  {
-    width: 80%;
-}
-/* .mbsc-calendar-scroll-wrapper {
-	height: 75%;
-} */
-                  
-.mbsc-calendar-table button {
-    display: inline-block;
-    margin: 5px 5px 0 0;
-    padding: 10px 30px;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    background: #5185a8;
-    color: #fff;
-    text-decoration: none;
-    font-family: arial, verdana, sans-serif;
-    font-size: 14px;
-    font-weight: 100;
+.form_tittle .form-control {
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background: transparent;
+  padding: 7px 15px;
 }
 
-.mbsc-calendar-table input {
-    width: 100%;
-    margin: 0 0 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    font-family: arial, verdana, sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-    -webkit-appearance: none;
+.form_tittle input::placeholder {
+  color: white;
 }
 
-.mbsc-page {
-    padding: 1em;
-}
-.form_tittle .form-control{
-    border: 1px solid white;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    background: transparent;
-    padding: 7px 15px;
-}  
-.form_tittle input::placeholder{
-    color: white;
-}                          
 .content_bar .content_bar_preview_text {
-    color: rgba(255, 255, 255, 0.795);
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0px 0 15px;
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px 0 15px;
 }
 
 .content_bar_preview_btn {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
+
 .content_bar_preview_btn.save {
-    font-size: 18px;
-    text-decoration: none;
-    width: 300px;
+  font-size: 18px;
+  text-decoration: none;
+  width: 300px;
 }
 
+@media (max-width: 1400px) {
+  .mbsc-page {
+    width: 100%;
+  }
 
-
-
-
-
-
-
-
-
-
-
-.mbsc-calendar-cell.mbsc-flex-1-0-0.mbsc-calendar-day.mbsc-ios.mbsc-ltr {
-	margin-bottom: 2px;
-	height: fit-content;
-	margin-top: 0px;
+  .content_bar_calender_layout_content {
+    padding: 20px 10px;
+  }
 }
-.content_bar_calender_layout_content .mbsc-flex-1-0 {
-	-moz-box-flex: 1;
-	flex: 0 0 auto;
+
+@media (max-width: 1200px) {
+  .content_bar_calender_layout {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .content_bar_calender_layout_img {
+    width: 100%;
+  }
+
+  .content_bar_calender_layout_content {
+    width: 100%;
+  }
 }
-#mbsc-control-0  div {
-    /* height: fit-content; */
+
+@media (max-width: 991px) {
+  .content_bar {
+    padding: 30px 30px;
+  }
 }
-@media (max-width:1400px) {
-    .mbsc-page {
-        width: 100%;
-    }
-    .content_bar_calender_layout_content {
-        padding: 20px 10px;
-    }
+
+@media (max-width: 767px) {
+  .sider_bar {
+    min-height: fit-content;
+    padding: 15px 30px;
+  }
+
+  .offcanvas-body,
+  .offcanvas-header {
+    background: #e9e6e6;
+  }
 }
-@media (max-width:1200px) {
-    .content_bar_calender_layout {
-        flex-wrap: wrap;
-        height: auto;
-    }
-    .content_bar_calender_layout_img {
-        width: 100%;
-    }
-    .content_bar_calender_layout_content {
-        width: 100%;
-    }
-}
-@media (max-width:991px) {
-    .content_bar {
-        padding: 30px 30px;
-    }
-}
-@media (max-width:767px) {
-    .sider_bar {
-        min-height: fit-content;
-        padding: 15px 30px;
-    }
-    
-    .offcanvas-body,.offcanvas-header {
-        background: #e9e6e6;
-    }
-}
-@media (max-width:575px) {
-    .content_bar_preview_btn.save {
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-    .content_bar_preview {
-        padding-left: 00px;
-    }
-    .content_bar_preview_btn.save,.content_bar_preview_btn {
-        font-size: 16px;
-    }
-    .form_tittle .form-control {
-        font-size: 16px;
-        padding: 7px 16px;
-    }
-    .content_bar {
-        padding: 25px 18px;
-    }
-    .sider_bar {
-        min-height: fit-content;
-        padding: 15px 18px;
-    }
-    .mbsc-ios.mbsc-calendar-week-day {
-        font-size: 16px;
-    }
-    .mbsc-calendar-day {
-        max-width: 12.286%;
-        text-align: center;
-        vertical-align: top;
-    }
-    .mbsc-flex-1-0-0 {
-        flex: 12% 0 0;
-    }
-    #mbsc-control-0 div {
-        justify-content: center;
-        /* height: 100%; */
-    }
-    #mbsc-control-0 div {
-        /* height: 100%; */
-        font-size: 12px;
-    }
-    .mbsc-page {
-        padding: 3px;
-    }
-    .mbsc-calendar-scroll-wrapper {
-        border: 2px solid #007aff;
-        border-radius: 14px;
-        padding: 20px 0 10px;
-    }
+
+@media (max-width: 575px) {
+  .content_bar_preview_btn.save {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .content_bar_preview {
+    padding-left: 00px;
+  }
+
+  .content_bar_preview_btn.save,
+  .content_bar_preview_btn {
+    font-size: 16px;
+  }
+
+  .form_tittle .form-control {
+    font-size: 16px;
+    padding: 7px 16px;
+  }
+
+  .content_bar {
+    padding: 25px 18px;
+  }
+
+  .sider_bar {
+    min-height: fit-content;
+    padding: 15px 18px;
+  }
 }
 
 .sider_bar_color_platte .form-check-input:checked[type="radio"] {
-	background-image: none;
-    border: 2px solid red !important;
-    box-shadow: none;
+  background-image: none;
+  border: 2px solid red !important;
+  box-shadow: none;
 }
-
-
-
 
 /* SLIDE  */
 .boxes {
-    height: fit-content;
-    text-align: center;
-    display: block;
+  height: fit-content;
+  text-align: center;
+  display: block;
 }
+
 .box_img {
-    width: 100%;
-    border-radius: 8px;
-    background: #85ccf8;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+  background: #85ccf8;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  overflow: hidden;
 }
+
 .over_slide {
-    background: #5f5f5f;
-    width: 100%;
-    overflow-x: scroll;
+  background: #5f5f5f;
+  width: 100%;
+  overflow-x: scroll;
 }
-
-
 
 .boxes .box_text {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
-
-
-
-

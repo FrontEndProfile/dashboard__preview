@@ -9,10 +9,11 @@
       window.isMbscDemo = true;
     </script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
-    <script src="js/mobiscroll.javascript.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/mobiscroll.javascript.min.css"> -->
+    <!-- <script src="js/mobiscroll.javascript.min.js"></script> -->
     <link rel="stylesheet" href="css/select.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -237,12 +238,16 @@
               </div>
               <div class="content_bar_calender_layout_content d-flex flex-column justify-content-center align-items-center">
                 <!-- ! ============== LAYOUT ===================  -->
-                <div mbsc-page class="demo-date-picker">
+                <!-- <div mbsc-page class="demo-date-picker">
                   <div style="height:100%">
                       <div id="demo"></div>
                   </div>
-                </div>
-                
+                </div> -->
+                <div class="calendar-wrapper" id="calendar-wrapper"></div>
+
+
+
+
                 
               </div>
             </div>
@@ -372,8 +377,31 @@
       </div>
     </main>
 
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script> -->
-     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script type="text/javascript">
+      var config = `
+      function selectDate(date) {
+      $('#calendar-wrapper').updateCalendarOptions({
+      date: date
+      });
+      console.log(calendar.getSelectedDate());
+      }
+      
+      var defaultConfig = {
+      weekDayLength: 1,
+      date: '08/05/2021',
+      onClickDate: selectDate,
+      showYearDropdown: true,
+      startOnMonday: false,
+      };
+      
+      var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+      console.log(calendar.getSelectedDate());
+      `;
+      eval(config);
+      </script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     
     <script src="js/main.js"></script>
